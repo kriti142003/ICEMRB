@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --dark: #61192c;
+    --light: #8C2F39;
+    --shade: #B23A48;
+    --simple: #FCB9B2;
+    --head: #ff4a67;
+    --cream: #FED0BB;
+    --high: #00171F;
+    --low: #AEE1FF;
+    --clean: #23a1db;
+    --lit: #063247;
+    --white: #fff;
+    --blue: #bbdff2;
+}
+
+.breadcrumbs .page-header {
+    padding: 60px 0 0 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -39px;
+    margin-left: -79px;
+    margin-right: -99px;
+}
+
+.breadcrumbs .page-header:before {
+    content: "";
+    background-color: rgba(14, 29, 52, 0.8);
+    position: absolute;
+    inset: 0;
+}
+
+.breadcrumbs .page-header h2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+
+.Con_team {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px;
+}
+
+.Con_team .card {
+    position: relative;
+    width: 300px;
+    background-color: #063247;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    margin: 56px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 7rem;
+}
+
+.Con_team .convener {
+    margin: 2rem 30%;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.Con_team .co_con {
+    margin: 6rem 7rem;
+    text-align: center;
+}
+
+.Con_team .card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5), 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.Con_team .card-image img {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+.Con_team p {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.name {
+    margin-top: 80px;
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+.sec {
+    margin: 0rem 35%;
+}
+
+.top {
+    color: var(--lit);
+    position: relative;
+    font-size: 2rem;
+    margin: 0rem 41%;
+    text-align: center;
+    padding: 2% 0 4% 0;
+    font-weight: bolder;
+}
+
+.pa {
+    color: var(--lit);
+    position: relative;
+    font-size: 2rem;
+    margin: 0rem 41%;
+    padding: 3% 0;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.sec {
+    color: var(--lit);
+    position: relative;
+    font-size: 2rem;
+    margin: 0rem 37%;
+    padding: 2% 0 4% 0;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.cos {
+    color: var(--lit);
+    position: relative;
+    font-size: 2rem;
+    margin: 0rem 37%;
+    padding: 3% 0;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.tab {
+    color: var(--lit);
+    text-decoration: underline;
+    font-size: 40px;
+    margin: 3%;
+    text-align: center;
+    top: 7rem;
+    position: relative;
+}

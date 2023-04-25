@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --dark: #61192c;
+    --light: #8C2F39;
+    --shade: #c45e6a;
+    --simple: #FCB9B2;
+    --head: #ff4a67;
+    --cream: #FED0BB;
+    --high: #00171F;
+    --low: #AEE1FF;
+    --clean: #23a1db;
+    --lit: #063247;
+    --white: #fff;
+    --blue: #bbdff2;
+}
+
+.breadcrumbs .page-header {
+    padding: 60px 0 0 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -39px;
+    margin-left: -79px;
+    margin-right: -99px;
+}
+
+.breadcrumbs .page-header:before {
+    content: "";
+    background-color: rgba(14, 29, 52, 0.8);
+    position: absolute;
+    inset: 0;
+}
+
+.breadcrumbs .page-header h2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+
+.contact .icons-container {
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    gap: 5rem;
+}
+
+.contact .icons-container .icons {
+    text-align: center;
+    padding: 3rem 2rem;
+    border: .3rem solid #23a1db;
+    background: #f0fdfa;
+}
+
+.contact .icons-container .icons i {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+    color: #fff;
+    background: #063247;
+}
+
+.contact .icons-container .icons h3 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #063247;
+    padding: .5rem 0;
+}
+
+.contact .icons-container .icons p {
+    font-size: 1rem;
+    line-height: 2;
+    color: #063247;
+}
+
+.contact .icons-container .email p {
+    font-size: 0.9rem;
+    color: #063247;
+    font-weight: bolder;
+    margin-left: -29px;
+}
+
+.contact .Join {
+    margin: 0 5%;
+}
+
+.contact .Join .form {
+    width: 90%;
+}
+
+.contact .Join form {
+    width: 600px;
+    padding: 15px 40px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 4% auto;
+}
+
+.contact .Join label {
+    display: block;
+    margin-bottom: 5px
+}
+
+.contact .Join label i {
+    color: #999;
+    font-size: 80%;
+}
+
+.contact .Join input,
+select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #a9bae64a;
+}
+
+.contact .Join .box {
+    padding-bottom: 10px;
+}
+
+.contact .Join .form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+
+.contact .Join .form-inline label,
+.form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+
+.contact .Join .error {
+    color: red;
+    font-size: 90%;
+}
+
+.contact .Join input[type=text] {
+    outline: none;
+}
+
+.contact .Join input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+    background: var(--lit);
+    box-shadow: 0 3px 0 var(--lit);
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.contact .Join input[type="submit"]:hover {
+    background: var(--clean);
+}
+
+.contact .Join .input-1 {
+    background-position: right 10px center;
+    border: 1px solid #01cc40;
+}
+
+.contact .Join .input-2 {
+    background-position: right 10px center;
+    border: 1px solid red;
+}
+
+.contact .Join .input-3 {
+    border: 1px solid #01cc40!important;
+}
+
+.contact .Join .input-4 {
+    border: 1px solid red;
+}
+
+.contact .forms {
+    display: flex;
+}
+
+.contact h3 {
+    text-align: center;
+    position: relative;
+    font-weight: bolder;
+    margin: 0 5% 0 10%;
+}
+
+.contact .tech-query p {
+    position: relative;
+    margin: 0 5% 0 9%;
+    color: var(--high);
+    text-align: center;
+    font-weight: 500;
+}
+
+.contact .contact-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: var(--lit);
+    animation-delay: 0.8s;
+    background-color: var(--clean);
+    border: 2px solid var(--lit);
+    position: relative;
+    margin: 2% 50%;
+}
+
+.contact .contact-btn:hover {
+    background: #fff;
+    color: var(--lit);
+}
+
+.vl {
+    border-left: 2px solid var(--lit);
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: 20px;
+    top: 200;
+}

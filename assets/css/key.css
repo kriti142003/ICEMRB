@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ :root {
+    --dark: #61192c;
+    --light: #8C2F39;
+    --shade: #B23A48;
+    --simple: #FCB9B2;
+    --head: #ff4a67;
+    --cream: #FED0BB;
+    --high: #00171F;
+    --low: #AEE1FF;
+    --clean: #23a1db;
+    --lit: #063247;
+    --white: #fff;
+    --blue: #bbdff2;
+}
+
+
+/*Introduction*/
+
+.breadcrumbs .page-header {
+    padding: 60px 0 0 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -39px;
+    margin-left: -79px;
+    margin-right: -99px;
+}
+
+.breadcrumbs .page-header:before {
+    content: "";
+    background-color: rgba(14, 29, 52, 0.8);
+    position: absolute;
+    inset: 0;
+}
+
+.breadcrumbs .page-header h2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+
+.pricing {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-size: 50% 50%;
+    margin-top: 60px;
+}
+
+.price {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-size: 100% 100%;
+    margin-top: -180px;
+}
+
+table {
+    width: 600px;
+    box-shadow: -1px 12px 12px -6px rgba(0, 0, 0, 0.5);
+}
+
+table,
+td,
+th {
+    padding: 20px 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    text-align: center;
+    cursor: pointer;
+}
+
+td {
+    font-size: 18px;
+}
+
+th {
+    background-color: var(--high);
+    color: var(--white);
+    border: var(--high) solid 1px;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--lit);
+    color: var(--white);
+}
+
+tr:nth-child(odd):hover {
+    background-color: var(--white);
+    color: var(--high);
+    transform: scale(1.2);
+    transition: transform 200ms ease-in;
+}
+
+tr:nth-child(even) {
+    background-color: var(--low);
+    color: var(--high);
+}
+
+tr:nth-child(even):hover {
+    background-color: var(--white);
+    color: var(--high);
+    transform: scale(1.2);
+    transition: transform 200ms ease-in;
+}
+
+#disc {
+    margin-top: -52px;
+    margin-left: 350px;
+    margin-bottom: 30px;
+    color: #AEE2FF;
+}
+
+.refund {
+    position: relative;
+    margin: 0 4%;
+    color: var(--high);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4%;
+}
+
+h3 {
+    padding: 0 80px;
+    margin-bottom: 20px;
+    color: #060c22;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.Bank_details {
+    width: 100%;
+    height: 25rem;
+    margin-left: 5%;
+}
+
+.bank_table {
+    display: flex;
+}
+
+@media (max-width: 1382px) {
+    .pricing {
+        margin-top: 0px;
+    }
+    .bank_table {
+        display: list-item;
+    }
+    .Bank_details {
+        margin-top: 5%;
+        justify-items: center;
+        margin-left: 0%;
+    }
+    table {
+        width: 700px;
+        margin-top: 5%;
+        justify-items: center;
+    }
+    .regist h3 {
+        margin-top: 70%;
+    }
+}
+
+@media (max-width: 840px) {
+    table {
+        width: 400px;
+        margin-top: 5%;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .regist h3 {
+        margin-top: 60%;
+    }
+}
+
+@media (max-width: 664px) {
+    table,
+    td,
+    th {
+        padding: 5px;
+    }
+    table {
+        margin: 0 auto;
+    }
+    .Bank_details {
+        width: 70%;
+        height: 30rem;
+        margin: 0 auto;
+    }
+    .regist h3 {
+        margin-top: 0%;
+    }
+}
+
+@media (max-width: 600px) {
+    table {
+        margin: 0 13%;
+        margin-top: 5%;
+    }
+    .Bank_details {
+        margin: 0 15%;
+        width: 60%;
+        height: 35rem;
+    }
+    table,
+    td,
+    th {
+        padding: 1px;
+    }
+}
+
+@media (max-width: 540px) {
+    table {
+        margin: 0 11%;
+        margin-top: 5%;
+    }
+    .Bank_details {
+        margin: 0 11%;
+    }
+    .regist h3 {
+        margin-top: 100%;
+    }
+}
+
+@media (max-width: 440px) {
+    table {
+        margin: 0 6%;
+        margin-top: 5%;
+        width: 300px;
+    }
+    table,
+    td,
+    th {
+        padding: 0px;
+        font-size: 10px;
+    }
+    .Bank_details {
+        margin: 0 15%;
+        font-size: 10px;
+        margin-top: -25%;
+    }
+    .regist h3 {
+        margin-top: -10%;
+    }
+    .refund {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 300px) {
+    table {
+        margin: 0 3%;
+        margin-top: 5%;
+        width: 250px;
+    }
+    .Bank_details {
+        margin: 0 3%;
+        margin-top: -40%;
+    }
+}

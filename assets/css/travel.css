@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ :root {
+    --dark: #61192c;
+    --light: #8C2F39;
+    --shade: #c45e6a;
+    --simple: #FCB9B2;
+    --head: #ff4a67;
+    --cream: #FED0BB;
+    --high: #00171F;
+    --low: #AEE1FF;
+    --clean: #23a1db;
+    --lit: #063247;
+    --white: #fff;
+    --blue: #bbdff2;
+}
+
+#main {
+    width: 100%;
+    padding: 0;
+}
+
+.content-asset p {
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    display: none;
+}
+
+.margin-top-10 {
+    padding-top: 10px;
+}
+
+.margin-bot-10 {
+    padding-bottom: 10px;
+}
+
+#parallax-img h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+#parallax-img h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: .9;
+}
+
+#parallax-img h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    line-height: 0;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: black;
+}
+
+#parallax-img p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.first-character {
+    font-weight: 400;
+    float: left;
+    font-size: 84px;
+    line-height: 64px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sc {
+    color: #3b8595;
+}
+
+.ny {
+    color: #3d3c3a;
+}
+
+.atw {
+    color: #c48660;
+}
+
+.ig {
+    color: var(--dark);
+}
+
+#parallax-img .title {
+    background: white;
+    padding: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#parallax-img .title h1 {
+    font-size: 35px;
+    letter-spacing: 8px;
+}
+
+#parallax-img .block {
+    background: white;
+    padding: 60px;
+    width: 820px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#parallax-img.block-gray {
+    background: #f2f2f2;
+    padding: 60px;
+}
+
+#parallax-img .section-overlay-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.70;
+}
+
+#parallax-img .parallax-one {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Delhi_fort.jpg/1200px-Delhi_fort.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#parallax-img .parallax-one::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+}
+
+#parallax-img .parallax-two {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(https://www.chardhambooking.com/wp-content/uploads/2021/01/Lotus-Tmple-Photo-by-Arpan-Das.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#parallax-img .parallax-two::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+}
+
+#parallax-img .parallax-three {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(https://www.makemytrip.com/travel-guide/media/dg_image/delhi/Swaminarayan-Akshardham-Temple-Delhi.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#parallax-img .parallax-three::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+}
+
+#parallax-img .parallax-four {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/16/e0/7b/c2/picture-clicked-at-the.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#parallax-img .parallax-four::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+}
+
+#parallax-img .line-break {
+    border-bottom: 1px solid black;
+    width: 150px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+    #parallax-img .block {
+        padding: 40px;
+        width: 620px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #parallax-img .block {
+        padding: 30px;
+        width: 420px;
+    }
+    #parallax-img h2 {
+        font-size: 30px;
+    }
+    #parallax-img .block {
+        padding: 30px;
+    }
+    #parallax-img .parallax-one,
+    #parallax-img .parallax-two,
+    #parallax-img .parallax-three,
+    #parallax-img .parallax-four {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #parallax-img .block {
+        padding: 30px 15px;
+        width: 290px;
+    }
+}

@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ :root {
+    --dark: #61192c;
+    --light: #8C2F39;
+    --shade: #B23A48;
+    --simple: #FCB9B2;
+    --head: #ff4a67;
+    --cream: #FED0BB;
+    --high: #00171F;
+    --low: #AEE1FF;
+    --clean: #23a1db;
+    --lit: #063247;
+    --white: #fff;
+    --blue: #bbdff2;
+}
+
+.breadcrumbs .page-header {
+    padding: 60px 0 0 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -39px;
+    margin-left: -79px;
+    margin-right: -99px;
+}
+
+.breadcrumbs .page-header:before {
+    content: "";
+    background-color: rgba(14, 29, 52, 0.8);
+    position: absolute;
+    inset: 0;
+}
+
+.breadcrumbs .page-header h2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+
+.adv {
+    position: relative;
+    margin: 2rem;
+}
+
+.adv input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.adv h1 {
+    background: var(--lit);
+    color: var(--white);
+    padding: 1rem;
+    position: relative;
+    height: 8rem;
+    width: 46rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.adv label::after {
+    content: "";
+    display: inline-block;
+    border: 15px solid transparent;
+    border-top: 20px solid var(--white);
+    margin-left: 10%;
+}
+
+.adv:nth-child(even) {
+    margin-right: 0 auto;
+    left: 15%;
+}
+
+.adv:nth-child(odd) {
+    margin-left: 0 auto;
+    right: 15%;
+}
+
+.adv label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    text-align: center;
+}
+
+.adv div.p {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: var(--low);
+    width: 46rem;
+    padding-top: 10px;
+    box-shadow: 5px 5px 15px 0 rgba(56, 114, 180, 0.812);
+    border-radius: 0px 0px 10px 10px;
+    margin-top: -20px;
+    margin: 0 auto;
+}
+
+.adv div.p p {
+    padding: 2rem;
+    font-size: 20px;
+    text-align: right;
+}
+
+.adv input:checked~h1 label::before {
+    border-left: 15px solid transparent;
+    border-top: 20px solid white;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.adv input:checked~h1~div.p {
+    max-height: fit-content;
+    margin-top: -30px;
+}
+
+.nal {
+    position: relative;
+    margin: 2rem;
+}
+
+.nal input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.nal h1 {
+    background: var(--lit);
+    color: var(--white);
+    padding: 1rem;
+    position: relative;
+    height: 10rem;
+    width: 56rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nal label::after {
+    content: "";
+    display: inline-block;
+    border: 15px solid transparent;
+    border-top: 20px solid white;
+    margin-left: 10%;
+}
+
+.nal:nth-child(even) {
+    margin-right: 0 auto;
+    left: 15%;
+}
+
+.nal:nth-child(odd) {
+    margin-left: 0 auto;
+    right: 15%;
+}
+
+.nal label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 2rem 1rem;
+    text-align: center;
+}
+
+.nal div.p {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: var(--low);
+    width: 56rem;
+    padding-top: 10px;
+    box-shadow: 5px 5px 15px 0 rgba(56, 114, 180, 0.812);
+    border-radius: 0px 0px 10px 10px;
+    margin-top: -20px;
+    margin: 0 auto;
+}
+
+.nal div.p p {
+    padding: 2rem;
+}
+
+.nal input:checked~h1 label::before {
+    border-left: 15px solid transparent;
+    border-top: 20px solid white;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.nal input:checked~h1~div.p {
+    max-height: fit-content;
+    margin-top: -30px;
+}
+
+.tab {
+    color: var(--lit);
+    text-decoration: underline;
+    font-size: 40px;
+    margin: 3%;
+    text-align: center;
+    top: 7rem;
+    position: relative;
+}
+
+@media (max-width: 300px) {
+    .adv h1 {
+        height: 15rem;
+        width: 11rem;
+    }
+    .adv div.p {
+        max-height: 0px;
+        width: 13rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .adv,
+    .nal {
+        position: relative;
+        margin: 2rem 0rem;
+        padding: 0 5%;
+    }
+    .adv h1,
+    .nal h1 {
+        height: 15rem;
+        width: 13rem;
+    }
+    .adv:nth-child(even) {
+        position: relative;
+        margin-left: 0rem;
+    }
+    .adv:nth-child(odd) {
+        position: relative;
+        margin-left: 0rem;
+    }
+    .adv label {
+        left: 0rem;
+        bottom: 0rem;
+    }
+    .adv label::after {
+        border: 8px solid transparent;
+        border-top: 8px solid white;
+        margin-left: 2%;
+    }
+    .adv h1 img {
+        margin: 2%;
+    }
+    .adv div.p {
+        max-height: 0px;
+        width: 15rem;
+    }
+    .ad-top {
+        margin: 0rem 27%;
+    }
+    .adv div.p p {
+        padding: 0.2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .adv {
+        position: relative;
+        margin: 2rem 0rem;
+    }
+    .adv h1 {
+        height: 15rem;
+        width: 18rem;
+    }
+    .adv:nth-child(even) {
+        position: relative;
+        margin-left: 0rem;
+    }
+    .adv:nth-child(odd) {
+        position: relative;
+        margin-left: 0rem;
+    }
+    .adv label {
+        left: 0rem;
+        bottom: 0rem;
+    }
+    .adv label::after {
+        border: 10px solid transparent;
+        border-top: 10px solid white;
+        margin-left: 2%;
+    }
+    .adv h1 img {
+        margin: 2%;
+    }
+    .adv div.p {
+        max-height: 0px;
+        width: 20rem;
+    }
+    .ad-top {
+        margin: 0rem 27%;
+    }
+    .adv div.p p {
+        padding: 0.2rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .adv {
+        position: relative;
+        margin: 2rem 0rem;
+        padding: 0 2%;
+    }
+    .adv h1 {
+        height: 7rem;
+        width: 37rem;
+    }
+    .adv:nth-child(even) {
+        position: relative;
+        margin-left: 0rem;
+    }
+    .adv:nth-child(odd) {
+        position: relative;
+        margin-left: 0rem;
+    }
+    .adv label {
+        left: 7rem;
+        bottom: 5rem;
+    }
+    .adv label::after {
+        border: 10px solid transparent;
+        border-top: 10px solid white;
+        margin-left: 2%;
+    }
+    .adv h1 img {
+        margin: 1%;
+    }
+    .adv div.p {
+        max-height: 0px;
+        width: 39rem;
+    }
+}

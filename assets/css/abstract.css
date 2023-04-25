@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --dark: #61192c;
+    --light: #8C2F39;
+    --shade: #c45e6a;
+    --simple: #FCB9B2;
+    --head: #ff4a67;
+    --cream: #FED0BB;
+    --high: #00171F;
+    --low: #AEE1FF;
+    --clean: #23a1db;
+    --lit: #063247;
+    --white: #fff;
+    --blue: #bbdff2;
+}
+
+.breadcrumbs .page-header {
+    padding: 60px 0 0 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -39px;
+    margin-left: -79px;
+    margin-right: -99px;
+}
+
+.breadcrumbs .page-header:before {
+    content: "";
+    background-color: rgba(14, 29, 52, 0.8);
+    position: absolute;
+    inset: 0;
+}
+
+.breadcrumbs .page-header h2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+
+.Abstract_Sub {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-size: 100% 100%;
+}
+
+table {
+    width: 800px;
+    box-shadow: -1px 12px 12px -6px rgba(0, 0, 0, 0.5);
+}
+
+table,
+td,
+th {
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    text-align: center;
+    cursor: pointer;
+}
+
+td {
+    font-size: 18px;
+}
+
+th {
+    background-color: var(--high);
+    color: var(--white);
+    border: var(--high) solid 1px;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--lit);
+    color: var(--white);
+}
+
+tr:nth-child(odd):hover {
+    background-color: var(--white);
+    color: var(--high);
+    transform: scale(1.2);
+    transition: transform 200ms ease-in;
+}
+
+tr:nth-child(even) {
+    background-color: var(--low);
+    color: var(--high);
+}
+
+tr:nth-child(even):hover {
+    background-color: var(--white);
+    color: var(--high);
+    transform: scale(1.2);
+    transition: transform 200ms ease-in;
+}
+
+.Abstract_Sub .guideline {
+    font-size: 20px;
+    color: var(--high);
+    margin: 0.1% 4%;
+    text-align: left;
+}
+
+.Abstract_Sub .date_sub {
+    font-size: 35px;
+    text-align: center;
+    color: var(--high);
+    margin-top: 5%;
+}
+
+.Abstract_Sub .Ses {
+    font-size: 30px;
+    text-align: center;
+    color: var(--high);
+    margin: 1% 0;
+}
+
+@media (max-width: 770px) {
+    table,
+    td,
+    th {
+        padding: 5px;
+    }
+    table {
+        margin: 0 auto;
+        width: 600px;
+    }
+}
+
+@media (max-width: 601px) {
+    table,
+    td,
+    th {
+        padding: 5px;
+    }
+    table {
+        margin: 0 auto;
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    table,
+    td,
+    th {
+        padding: 1px;
+    }
+    table {
+        margin: 0 auto;
+        width: 270px;
+    }
+    .Abstract_Sub .date_sub {
+        margin-top: 10%;
+    }
+}
