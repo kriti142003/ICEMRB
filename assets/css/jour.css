@@ -21,9 +21,6 @@
     --blue: #bbdff2;
 }
 
-
-/*Introduction*/
-
 .breadcrumbs .page-header {
     padding: 60px 0 0 0;
     position: relative;
@@ -50,11 +47,11 @@
 }
 
 .jour .pricing {
-    height: 100vh;
+    height: 90vh;
     display: grid;
     place-items: center;
     background-size: 100% 100%;
-    margin: 0 5%;
+    margin: 0 1% 0 10%;
 }
 
 .jour table {
@@ -67,7 +64,7 @@
 .jour table,
 td,
 th {
-    padding: 30px;
+    padding: 12.5px;
     border: 1px solid lightgray;
     border-collapse: collapse;
     text-align: center;
@@ -108,14 +105,30 @@ th {
 
 .flexy {
     display: flex;
+    margin-top: 1%;
+}
+
+.flexy_2 {
+    display: flex;
+    margin-top: -15%;
 }
 
 .jour .jour_img {
-    margin: 5% 8%;
+    margin: 5% -1%;
 }
 
 .jour .jour_img img {
     width: 300px;
-    height: 450px;
+    height: 400px;
+    border: 2px solid var(--high);
+}
+
+.jour .jour_image {
+    margin: 5.9% -1%;
+}
+
+.jour .jour_image img {
+    width: 300px;
+    height: 375px;
     border: 2px solid var(--high);
 }
