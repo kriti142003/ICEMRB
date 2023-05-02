@@ -232,7 +232,7 @@ select {
 
 .vl {
     border-left: 2px solid var(--lit);
-    height: 500px;
+    height: 540px;
     position: absolute;
     left: 50%;
     margin-left: 20px;
