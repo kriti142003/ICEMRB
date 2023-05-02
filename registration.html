@@ -1,288 +1,283 @@
-    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-    }
-    
-     :root {
-        --dark: #61192c;
-        --light: #8C2F39;
-        --shade: #B23A48;
-        --simple: #FCB9B2;
-        --head: #ff4a67;
-        --cream: #FED0BB;
-        --high: #00171F;
-        --low: #AEE1FF;
-        --clean: #23a1db;
-        --lit: #063247;
-        --white: #fff;
-        --blue: #bbdff2;
-    }
-    /*Introduction*/
-    
-    .breadcrumbs .page-header {
-        padding: 60px 0 0 0;
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-top: -39px;
-        margin-left: -79px;
-        margin-right: -99px;
-    }
-    
-    .breadcrumbs .page-header:before {
-        content: "";
-        background-color: rgba(14, 29, 52, 0.8);
-        position: absolute;
-        inset: 0;
-    }
-    
-    .breadcrumbs .page-header h2 {
-        font-size: 36px;
-        font-weight: 500;
-        text-align: center;
-        color: #fff;
-    }
-    
-    .pricing {
-        height: 100vh;
-        display: grid;
-        place-items: center;
-        background-size: 50% 50%;
-        margin-top: 60px;
-    }
-    
-    .price {
-        height: 100vh;
-        display: grid;
-        place-items: center;
-        background-size: 100% 100%;
-        margin-top: -180px;
-    }
-    
-    table {
-        width: 600px;
-        box-shadow: -1px 12px 12px -6px rgba(0, 0, 0, 0.5);
-    }
-    
-    table,
-    td,
-    th {
-        padding: 20px 10px;
-        border: 1px solid rgb(0, 0, 0);
-        border-collapse: collapse;
-        text-align: center;
-        cursor: pointer;
-    }
-    
-    td {
-        font-size: 18px;
-    }
-    
-    th {
-        background-color: var(--high);
-        color: var(--white);
-        border: var(--high) solid 1px;
-    }
-    
-    tr:nth-child(odd) {
-        background-color: var(--lit);
-        color: var(--white);
-    }
-    
-    tr:nth-child(odd):hover {
-        background-color: var(--white);
-        color: var(--high);
-        transform: scale(1.2);
-        transition: transform 200ms ease-in;
-    }
-    
-    tr:nth-child(even) {
-        background-color: var(--low);
-        color: var(--high);
-    }
-    
-    tr:nth-child(even):hover {
-        background-color: var(--white);
-        color: var(--high);
-        transform: scale(1.2);
-        transition: transform 200ms ease-in;
-    }
-    
-    #disc {
-        margin-top: -52px;
-        margin-left: 350px;
-        margin-bottom: 30px;
-        color: #AEE2FF;
-    }
-    
-    .refund {
-        position: relative;
-        margin: 0 4%;
-        color: var(--high);
-        font-size: 11px;
-        font-weight: 500;
-        padding: 4%;
-    }
-    
-    h3 {
-        padding: 0 80px;
-        margin-bottom: 20px;
-        color: #060c22;
-        font-style: italic;
-        font-size: 15px;
-    }
-    
-    .Bank_details {
-        width: 100%;
-        height: 25rem;
-        margin-left: 5%;
-    }
-    
-    .bank_table {
-        display: flex;
-        margin-top: -27%;
-    }
-    
-    @media (max-width: 1382px) {
-        .pricing {
-            margin-top: 0px;
-        }
-        .bank_table {
-            display: list-item;
-        }
-        .Bank_details {
-            margin-top: 5%;
-            justify-items: center;
-            margin-left: 0%;
-        }
-        table {
-            width: 700px;
-            margin-top: 5%;
-            justify-items: center;
-        }
-        .regist h3 {
-            margin-top: 70%;
-        }
-    }
-    
-    @media (max-width: 840px) {
-        table {
-            width: 400px;
-            margin-top: 5%;
-            justify-items: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .regist h3 {
-            margin-top: 60%;
-        }
-    }
-    
-    @media (max-width: 664px) {
-        table,
-        td,
-        th {
-            padding: 5px;
-        }
-        table {
-            margin: 0 auto;
-        }
-        .Bank_details {
-            width: 70%;
-            height: 30rem;
-            margin: 0 auto;
-        }
-        .regist h3 {
-            margin-top: 0%;
-        }
-    }
-    
-    @media (max-width: 600px) {
-        table {
-            margin: 0 13%;
-            margin-top: 5%;
-        }
-        .Bank_details {
-            margin: 0 15%;
-            width: 60%;
-            height: 35rem;
-        }
-        table,
-        td,
-        th {
-            padding: 1px;
-        }
-    }
-    
-    @media (max-width: 540px) {
-        table {
-            margin: 0 11%;
-            margin-top: 5%;
-        }
-        .Bank_details {
-            margin: 0 11%;
-        }
-        .regist h3 {
-            margin-top: 100%;
-        }
-    }
-    
-    @media (max-width: 440px) {
-        table {
-            margin: 0 6%;
-            margin-top: 5%;
-            width: 300px;
-        }
-        table,
-        td,
-        th {
-            padding: 0px;
-            font-size: 10px;
-        }
-        .Bank_details {
-            margin: 0 15%;
-            font-size: 10px;
-            margin-top: -25%;
-        }
-        .regist h3 {
-            margin-top: -10%;
-        }
-        .refund {
-            font-size: 10px;
-        }
-    }
-    
-    @media (max-width: 300px) {
-        table {
-            margin: 0 3%;
-            margin-top: 5%;
-            width: 250px;
-        }
-        .Bank_details {
-            margin: 0 3%;
-            margin-top: -40%;
-        }
-    }
-    
-    .h2hed {
-        color: var(--high);
-        font-size: 35px;
-        margin-top: -45%;
-    }
-    
-    .h2_2 {
-        color: var(--high);
-        font-size: 35px;
-        margin-left: 4%;
-        margin-top: -10%;
-    }
-    
-    .h2_2 a {
-        color: var(--lit);
-        font-size: 30px;
-        text-decoration: underline;
-    }
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>International Conference</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/key.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo">ICEMRB-2023</div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#" class="desktop-link">About the Conference</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">About the Conference</label>
+                        <ul>
+                            <li><a href="ATC.html">Introduction</a></li>
+                            <li><a href="patrons.html">Patrons</a></li>
+                            <li><a href="Adv_board.html">Scientific Advisory Board</a></li>
+                            <li><a href="ses.html">Session Advisors</a></li>
+                            <li><a href="CTeam.html">Conveners</a></li>
+                            <li><a href="Secrateries.html">Secrateries</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">About the Organiser</a>
+                        <input type="checkbox" id="show-org">
+                        <label for="show-org">About the Organiser</label>
+                        <ul>
+                            <li><a href="uni.html">About the University</a></li>
+                            <li><a href="Location.html">Location</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="accomodation.html">Accommodation</a></li>
+                            <li><a href="travel.html">Travel Guide</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Organising Team</a>
+                        <input type="checkbox" id="show-team">
+                        <label for="show-team">Organising Team</label>
+                        <ul>
+                            <li><a href="Inter_con.html">International Organising Committee</a></li>
+                            <li><a href="national_org.html">National Organising Committee</a></li>
+                            <li><a href="org_com.html">Organising Committee</a></li>
+                            <li><a href="local_org.html">Local Organising Committee</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Speakers</a>
+                        <input type="checkbox" id="show-services">
+                        <label for="show-services">Speakers</label>
+                        <ul>
+                            <li><a href="speaker.html">Plenary Speakers</a></li>
+                            <li><a href="speaker.html">Keynote Speakers</a></li>
+                            <li><a href="speaker.html">Invited Speakers</a></li>
+                            <li><a href="speaker.html">Emerging Speakers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Submission Information</a>
+                        <input type="checkbox" id="show-items">
+                        <label for="show-items">Submission Information</label>
+                        <ul>
+                            <li><a href="abstract_sub.html">Abstract Submission</a></li>
+                            <li><a href="journal_info.html">Journal Information</a></li>
+                            <li><a href="key.html">Key Dates</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="registration.html">Registration</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="home">
+        <div class="container" data-aos="fade-up"><br><br><br>
+            <div class="breadcrumbs">
+                <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/mru.jpeg');">
+                    <div class="container position-relative">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-6 text-center">
+                                <h2>Registration</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pricing">
+            <div data-aos="fade-up">
+                <h2 class="h2hed">Registration Fee Details</h2>
+            </div>
+            <div class="bank_table">
+                <div data-aos="fade-right">
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Early</th>
+                            <th>Regular</th>
+                            <th>On-site</th>
+                        </tr>
+                        <tr>
+                            <td>M.Sc./B.Tech. Students</td>
+                            <td>&#8377 2000</td>
+                            <td>&#8377 3000</td>
+                            <td>&#8377 3500</td>
+                        </tr>
+                        <tr>
+                            <td>Ph. D. Students</td>
+                            <td>&#8377 3000</td>
+                            <td>&#8377 4000</td>
+                            <td>&#8377 4500</td>
+                        </tr>
+                        <tr>
+                            <td>Postdoc researcher</td>
+                            <td>&#8377 4000</td>
+                            <td>&#8377 5000</td>
+                            <td>&#8377 5500</td>
+                        </tr>
+                        <tr>
+                            <td>Faculty</td>
+                            <td>&#8377 5000</td>
+                            <td>&#8377 6000</td>
+                            <td>&#8377 6500</td>
+                        </tr>
+                        <tr>
+                            <td>Foreigner</td>
+                            <td>$ 425</td>
+                            <td>$ 500</td>
+                            <td>$ 525</td>
+                        </tr>
+                        <tr>
+                            <td>Participation only /Accompanying person*</td>
+                            <td>&#8377 800</td>
+                            <td>&#8377 1000</td>
+                            <td>&#8377 1200</td>
+                        </tr>
+                        <tr>
+                            <td>Industry</td>
+                            <td>&#8377 10000</td>
+                            <td>&#8377 12000</td>
+                            <td>&#8377 15000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div data-aos="fade-left">
+                    <div class="Bank_details">
+                        <table class="bank">
+                            <tr>
+                                <th colspan="2" class="bank">BANK DETAILS</th>
+                            </tr>
+                            <tr>
+                                <td style="padding : 22px;">Name</td>
+                                <td class="bank">Manav Rachna University Project WTR</td>
+                            </tr>
+                            <tr>
+                                <td style="padding : 22px;">A/C No</td>
+                                <td>50100514388460</td>
+                            </tr>
+                            <tr>
+                                <td style="padding : 22px;">Bank Name</td>
+                                <td>HDFC Bank</td>
+                            </tr>
+                            <tr>
+                                <td style="padding : 22px;">Branch Address</td>
+                                <td>SCF No. 222, SEC-09 DEL, Faridabad-121001, Haryana</td>
+                            </tr>
+                            <tr>
+                                <td style="padding : 22px;">IFSC Code</td>
+                                <td>HDFC0000619</td>
+                            </tr>
+                            <tr>
+                                <td style="padding : 22px;">SWIFT Code</td>
+                                <td>HDFCINBB</td>
+                            </tr>
+                            <tr>
+                                <td style="padding : 22px;">Details</td>
+                                <td>ICEMRB-2023</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div data-aos="fade-up">
+            <h2 class="h2_2"><strong>Registration Link : </strong>
+                <a href="https://docs.google.com/forms/d/11xi7xPHeYTXcISTbj0fEumOsnunvZVhqykHHM1q3lKo/">https://docs.google.com/forms/d/11xi7xPHeYTXcISTbj0fEumOsnunvZVhqykHHM1q3lKo/</a>
+            </h2>
+        </div><br>
+        <div data-aos="fade-up">
+            <h3>Refund Policy</h3>
+            <ul class="refund">
+                <li>
+                    50% discount applicable to the participant from MRU or it,s Alumni.
+                    <li>
+                        A refund policy is proposed to apply for the participant, who want to cancel their registration because of some unavoidable circumstances.
+                    </li>
+                    <li>100 % (in case of early registration) and 80% (in case of regular registration) refund if registration is cancelled before October 31, 2023.</li>
+                    <li>70 % (in case of early registration) and 40% (in case of regular registration) refund if registration is cancelled before November 30, 2023.</li>
+                    <li> No refund if registration is cancelled after November 30, 2023. (4) In all cases, bank charges, if any will be adjusted from the amount to be refunded.</li>
+                    <li>In case, event is cancelled because of some avoidable reasons, 100% registration fee will be refunded.</li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <h3>ICEMRB-2023</h3>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">About the University</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Scope of the Conference</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Speakers</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Abstract Submission</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Journal Information</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Key Dates</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Accommodation</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Registration</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            Manav Rachna University, Faridabad, Haryana<br>
+                            <strong>Phone:</strong>0129- 426 8360 <strong>Extn:</strong> 8360 <br>
+                            <strong>Email:</strong> convener.icemrb2023@mru.edu.in<br>
+                        </p>
+
+                        <!--<div class="social-links">
+                                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                            </div>-->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
