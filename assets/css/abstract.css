@@ -123,6 +123,10 @@ tr:nth-child(even):hover {
     margin: 1% 0;
 }
 
+.guideline a{
+    color: blue;
+}
+
 @media (max-width: 770px) {
     table,
     td,
