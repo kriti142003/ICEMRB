@@ -127,6 +127,10 @@ tr:nth-child(even):hover {
     color: blue;
 }
 
+.footer{
+    display: block;
+}
+
 @media (max-width: 770px) {
     table,
     td,
